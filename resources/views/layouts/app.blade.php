@@ -25,7 +25,6 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        <link rel="icon" type="image/png" href="{{Vite::asset('resources/assets/img/favicon.png')}}" />
     </head>
     <body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
         <div id="main" class="relative">
@@ -39,11 +38,11 @@
                 }
             }">
                 <livewire:navbar />
+                <div class="w-screen">
                     <livewire:hello />
 
                     <livewire:about />
 
-                    <livewire:services />
 
                     <livewire:portfolio />
 
@@ -54,6 +53,8 @@
                     <livewire:contact />
 
                     <livewire:join />
+
+                </div>
                 <div class="bg-primary">
                     <div class="container flex flex-col justify-between py-6 sm:flex-row">
                         <p class="text-center font-body text-white md:text-left">

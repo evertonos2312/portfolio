@@ -29,11 +29,11 @@
             <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
         </button>
     </form>
-    <div class="flex flex-col pt-16 lg:flex-row">
+    <div class="flex flex-col pt-16 lg:flex-row flex justify-center">
 
         <div
-            class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
-            <div class="flex items-center">
+            class="w-full border-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3">
+            <div class="flex items-center justify-center">
                 <i class="bx bx-envelope text-2xl text-grey-40"></i>
                 <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
                     My Email
