@@ -1,5 +1,5 @@
 <div class="w-full z-50 top-0 py-3 sm:py-5  fixed bg-custom-gradient-to-r from-custom-hero-gradient-from to-hero-custom-gradient-to  ">
-    <div class="container flex items-center justify-center">
+    <div class="container flex items-center justify-end">
         <div class="hidden lg:block">
             <ul class="flex items-center">
                 <li class="group pl-6">
@@ -43,7 +43,6 @@
             </button>
         </div>
     </div>
-</div>
 <div
     class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
     :class="{ 'opacity-100 pointer-events-auto': mobileMenu }">
@@ -90,4 +89,5 @@
 
         </ul>
     </div>
+</div>
 </div>
