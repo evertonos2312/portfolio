@@ -13,10 +13,10 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="mx-10 flex items-baseline">
-                        <a href="#"
+                        <a href="{{ route('dashboard') }}"
                            class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
-                        <a href="#"
-                           class="mx-1 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Link</a>
+                        <a href="{{ route('profile.create') }}"
+                           class="mx-1 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Perfil</a>
                         <a href="#"
                            class="mx-1 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Another
                             Link</a>

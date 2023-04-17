@@ -2,47 +2,38 @@
     <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
         <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
             <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-                Who am I?
+                Quem eu sou?
             </h2>
             <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-                I'm Christy Smith, a Web Designer & Photographer
+                Olá, meu nome é Everton e sou Programador PHP.
             </h4>
             <p class="pt-6 font-body leading-relaxed text-grey-20">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                @if(isset($profile->description))
+                    {!! $profile->description  !!}
+                @endif
             </p>
+            @if(isset($profile->linkedin_url))
+
+
             <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
                 <div class="flex items-center justify-center sm:justify-start">
                     <p class="font-body text-lg font-semibold uppercase text-grey-20">
-                        Connect with me
+                        Conecte-se comigo
                     </p>
                     <div class="hidden sm:block">
                         <i class="bx bx-chevron-right text-2xl text-primary"></i>
                     </div>
                 </div>
                 <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-                    <a href="/">
-                        <i class="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" class="pl-4">
-                        <i class="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" class="pl-4">
-                        <i class="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" class="pl-4">
+                    <a target="_blank" href="{{$profile->linkedin_url}}" class="pl-4">
                         <i class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
                     </a>
-                    <a href="/" class="pl-4">
-                        <i class="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
+                    <a target="_blank" href="{{$profile->github_url}}" class="pl-4">
+                        <i class="bx bxl-github text-2xl text-primary hover:text-yellow"></i>
                     </a>
                 </div>
             </div>
+            @endif
         </div>
         <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
             <div>
