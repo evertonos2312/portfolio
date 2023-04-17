@@ -25,6 +25,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
     Route::get('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'create'])->name('profile.create');
     Route::post('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'update'])->name('profile.update');
+    Route::post('admin/language', [\App\Http\Controllers\Admin\LanguageController::class, 'store'])->name('language.create');
     Route::delete('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 

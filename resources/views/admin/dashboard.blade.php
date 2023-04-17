@@ -1,219 +1,262 @@
 @extends('layouts.admin.admin')
-@section('header')
-    <header class="bg-white shadow">
-        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold leading-tight text-gray-900">Home</h1>
-        </div>
-    </header>
-@endsection
     @section('content')
-
-        <div class="mx-auto w-full">
-            <div>
-                <!-- Card stats -->
-                <div class="flex flex-wrap -mx-4">
-                    <div class="w-full md:w-1/3 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                            <div class="flex-auto p-4">
-                                <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-gray-500 uppercase font-bold text-xs">
-                                            New users
-                                        </h5>
-                                        <span class="font-semibold text-xl text-gray-800">
-                          2,356
-                        </span>
-                                    </div>
-                                    <div class="relative w-auto px-2 flex-initial">
-                                        <div
-                                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-orange-500">
-                                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                                 stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-gray-500 mt-4">
-                      <span class="text-red-500 mr-2">
-                        <i class="fas fa-arrow-down"></i> 3.48%
-                      </span>
-                                    <span class="whitespace-no-wrap">
-                        Since last week
-                      </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/3 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                            <div class="flex-auto p-4">
-                                <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-gray-500 uppercase font-bold text-xs">
-                                            Sales
-                                        </h5>
-                                        <span class="font-semibold text-xl text-gray-800">
-                          924
-                        </span>
-                                    </div>
-                                    <div class="relative w-auto px-2 flex-initial">
-                                        <div
-                                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-pink-500">
-                                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                                 stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-gray-500 mt-4">
-                      <span class="text-orange-500 mr-2">
-                        <i class="fas fa-arrow-down"></i> 1.10%
-                      </span>
-                                    <span class="whitespace-no-wrap">
-                        Since yesterday
-                      </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/3 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                            <div class="flex-auto p-4">
-                                <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-gray-500 uppercase font-bold text-xs">
-                                            Performance
-                                        </h5>
-                                        <span class="font-semibold text-xl text-gray-800">
-                          49,65%
-                        </span>
-                                    </div>
-                                    <div class="relative w-auto px-2 flex-initial">
-                                        <div
-                                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-blue-500">
-                                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                                 stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-gray-500 mt-4">
-                      <span class="text-green-500 mr-2">
-                        <i class="fas fa-arrow-up"></i> 12%
-                      </span>
-                                    <span class="whitespace-no-wrap">
-                        Since last month
-                      </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="content-header">
+        <h2 class="content-title"> Dashboard </h2>
+        <div>
+            <a href="#" class="btn btn-primary">Create report</a>
         </div>
-
-        <div class="mt-12">
-            <h2 class="text-2xl font-medium">Tables</h2>
-            <div class="mt-4">
-                <div class="flex flex-col">
-                    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6">
-                        <div
-                            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
-                            <table class="min-w-full">
-                                <thead class="bg-gray-100">
-                                <tr>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
-                                        style="text-align: start">
-                                        Name
-                                    </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
-                                        style="text-align: start">
-                                        Title
-                                    </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
-                                        style="text-align: start">
-                                        Status
-                                    </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
-                                        style="text-align: start">
-                                        Role
-                                    </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
-                                </tr>
-                                </thead>
-                                <tbody class="bg-white">
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <img class="h-10 w-10 rounded-full"
-                                                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                     alt=""/>
-                                            </div>
-                                            <div class="mx-2">
-                                                <div class="text-sm leading-5 font-medium text-gray-900">Jone Doe</div>
-                                                <div class="text-sm leading-5 text-gray-500">bernardlane@example.com</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        Software Engineer
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                  <span
-                                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                    Active
-                                  </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-                                        Owner
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 font-medium">
-                                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <img class="h-10 w-10 rounded-full"
-                                                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                     alt=""/>
-                                            </div>
-                                            <div class="mx-2">
-                                                <div class="text-sm leading-5 font-medium text-gray-900">Jone Doe</div>
-                                                <div class="text-sm leading-5 text-gray-500">bernardlane@example.com</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        Actor
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                  <span
-                                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                    Active
-                                  </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-                                        Owner
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 font-medium">
-                                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card card-body mb-4">
+                <article class="icontext">
+                    <span class="icon icon-sm rounded-circle bg-primary-light"><i class="text-primary material-icons md-monetization_on"></i></span>
+                    <div class="text">
+                        <h6 class="mb-1">Total Sales</h6>  <span>$19,626,058.20</span>
                     </div>
-                </div>
-            </div>
-        </div>
+                </article>
 
+            </div> <!-- card  end// -->
+        </div> <!-- col end// -->
+        <div class="col-lg-4">
+            <div class="card card-body mb-4">
+                <article class="icontext">
+                    <span class="icon icon-sm rounded-circle bg-success-light"><i class="text-success material-icons md-local_shipping"></i></span>
+                    <div class="text">
+                        <h6 class="mb-1">Total Orders</h6> <span>87790</span>
+                    </div>
+                </article>
+            </div> <!-- card end// -->
+        </div> <!-- col end// -->
+        <div class="col-lg-4">
+            <div class="card card-body mb-4">
+                <article class="icontext">
+                    <span class="icon icon-sm rounded-circle bg-warning-light"><i class="text-warning material-icons md-shopping_basket"></i></span>
+                    <div class="text">
+                        <h6 class="mb-1">Total Products</h6>  <span>5678</span>
+                    </div>
+                </article>
+            </div> <!--  end// -->
+        </div> <!-- col end// -->
+    </div> <!-- row end// -->
+
+
+    <div class="row">
+        <div class="col-xl-8 col-lg-12">
+            <div class="card mb-4">
+                <article class="card-body">
+                    <h5 class="card-title">Sale statistics</h5>
+                    <canvas height="120" id="myChart"></canvas>
+                </article> <!-- card-body end// -->
+            </div> <!-- card end// -->
+        </div> <!-- col end// -->
+        <div class="col-xl-4 col-lg-12">
+            <div class="card mb-4">
+                <article class="card-body">
+
+                    <h5 class="card-title">Marketing</h5>
+
+
+                    <span class="text-muted">Facebook page</span>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 15%">15%</div>
+                    </div>
+
+                    <span class="text-muted">Instagram page</span>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 65%">65% </div>
+                    </div>
+
+                    <span class="text-muted">Google search</span>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 51%"> 51% </div>
+                    </div>
+
+
+                    <span class="text-muted">Other links</span>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"> 80%</div>
+                    </div>
+                    <br>
+                    <a href="#" class="btn btn-light">Open analytics <i class="material-icons md-open_in_new"></i> </a>
+                </article> <!-- card-body end// -->
+            </div> <!-- card end// -->
+        </div> <!-- col end// -->
+    </div> <!-- row end// -->
+
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Latest orders</h5>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <tr>
+                        <td>2323</td>
+                        <td><b>Devon Lane</b></td>
+                        <td>devon@example.com</td>
+                        <td>$778.35</td>
+                        <td><span class="badge rounded-pill alert-success">Delivered</span></td>
+                        <td>07.05.2020</td>
+                        <td class="text-end">
+                            <a href="#" class="btn btn-light">Detail</a>
+                            <div class="dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View detail</a>
+                                    <a class="dropdown-item" href="#">Edit info</a>
+                                    <a class="dropdown-item text-danger" href="#">Delete</a>
+                                </div>
+                            </div> <!-- dropdown //end -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2323</td>
+                        <td><b>Darrell Steward</b></td>
+                        <td>stew123@mysite.com</td>
+                        <td>$980.90</td>
+                        <td><span class="badge rounded-pill alert-warning">Pending</span></td>
+                        <td>12.02.2020</td>
+                        <td class="text-end">
+                            <a href="#" class="btn btn-light">Detail</a>
+                            <div class="dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View detail</a>
+                                    <a class="dropdown-item" href="#">Edit info</a>
+                                    <a class="dropdown-item text-danger" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <!-- dropdown //end -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9053</td>
+                        <td><b>Mike Jonatan</b></td>
+                        <td>mike@somename.com</td>
+                        <td>$778.35</td>
+                        <td><span class="badge rounded-pill alert-warning">Pending</span></td>
+                        <td>07.05.2020</td>
+                        <td class="text-end">
+                            <a href="#" class="btn btn-light">Detail</a>
+                            <div class="dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View detail</a>
+                                    <a class="dropdown-item" href="#">Edit info</a>
+                                    <a class="dropdown-item text-danger" href="#">Delete</a>
+                                </div>
+                            </div> <!-- dropdown //end -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1234</td>
+                        <td><b>Ahmed Hassan</b></td>
+                        <td>devon@example.com</td>
+                        <td>$75.30</td>
+                        <td><span class="badge rounded-pill alert-danger">Cancelled</span></td>
+                        <td>02.01.2020</td>
+                        <td class="text-end">
+                            <a href="#" class="btn btn-light">Detail</a>
+                            <div class="dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View detail</a>
+                                    <a class="dropdown-item" href="#">Edit info</a>
+                                    <a class="dropdown-item text-danger" href="#">Delete</a>
+                                </div>
+                            </div> <!-- dropdown //end -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7532</td>
+                        <td><b>Abdul Mohammad</b></td>
+                        <td>abdu@example.com</td>
+                        <td>$190.15</td>
+                        <td><span class="badge rounded-pill alert-success">Delivered</span></td>
+                        <td>17.02.2020</td>
+                        <td class="text-end">
+                            <a href="#" class="btn btn-light">Detail</a>
+                            <div class="dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View detail</a>
+                                    <a class="dropdown-item" href="#">Edit info</a>
+                                    <a class="dropdown-item text-danger" href="#">Delete</a>
+                                </div>
+                            </div> <!-- dropdown //end -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2323</td>
+                        <td><b>Devon Lane</b></td>
+                        <td>devon@example.com</td>
+                        <td>$778.35</td>
+                        <td><span class="badge rounded-pill alert-success">Delivered</span></td>
+                        <td>07.05.2020</td>
+                        <td class="text-end">
+                            <a href="#" class="btn btn-light">Detail</a>
+                            <div class="dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View detail</a>
+                                    <a class="dropdown-item" href="#">Edit info</a>
+                                    <a class="dropdown-item text-danger" href="#">Delete</a>
+                                </div>
+                            </div> <!-- dropdown //end -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4521</td>
+                        <td><b>Alex Pushkin</b></td>
+                        <td>myphkin@company.com</td>
+                        <td>$708.35</td>
+                        <td><span class="badge rounded-pill alert-success">Delivered</span></td>
+                        <td>01.05.2019</td>
+                        <td class="text-end">
+                            <a href="#" class="btn btn-light">Detail</a>
+                            <div class="dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View detail</a>
+                                    <a class="dropdown-item" href="#">Edit info</a>
+                                    <a class="dropdown-item text-danger" href="#">Delete</a>
+                                </div>
+                            </div> <!-- dropdown //end -->
+                        </td>
+                    </tr>
+                </table>
+            </div> <!-- table-responsive end// -->
+        </div> <!-- card-body end// -->
+    </div> <!-- card end// -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [
+                    {
+                        label: 'Sales',
+                        backgroundColor: 'rgb(44, 120, 220)',
+                        borderColor: 'rgb(44, 120, 220)',
+                        data: [18, 17, 4, 3, 2, 20, 25, 31, 25, 22, 20, 9]
+                    },
+                    {
+                        label: 'Visitors',
+                        backgroundColor: 'rgb(180, 200, 230)',
+                        borderColor: 'rgb(180, 200, 230)',
+                        data: [40, 20, 17, 9, 23, 35, 39, 30, 34, 25, 27, 17]
+                    }
+
+                ]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
     @endsection

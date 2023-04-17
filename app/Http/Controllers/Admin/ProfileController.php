@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Badge;
 use App\Models\Profile;
 use Illuminate\Http\Request;
+use Storage;
 
 class ProfileController extends Controller
 {
@@ -34,15 +35,27 @@ class ProfileController extends Controller
         $validated = $request->validate([
             'name' => 'required',
             'email' => 'required',
-//            'image' => 'required',
             'secondary_email' => 'string',
             'linkedin_url' => 'string',
             'github_url' => 'string',
             'description' => 'string',
         ]);
+        $profileExistsImage = Profile::select('image')->where('email', $validated['email'])->first();
 
-//        $name = $request->file('image')->hashName();
-//        $request->file('image')->storeAs('public', $name);
+        if($request->file('image')){
+            $name = $request->file('image')->hashName();
+            $request->file('image')->storeAs('public', $name);
+            if($profileExistsImage){
+                $oldImage = $profileExistsImage->image;
+                Storage::delete('public/'.$oldImage);
+            }
+        } else {
+            if($profileExistsImage){
+                $name = $profileExistsImage->image;
+            } else {
+                $name = '';
+            }
+        }
         Profile::updateOrCreate(
             ['email' => $validated['email']],
             [
@@ -51,7 +64,7 @@ class ProfileController extends Controller
                 'linkedin_url' => $validated['linkedin_url'],
                 'github_url' => $validated['github_url'],
                 'description' => $validated['description'],
-//                'image' => $name
+                'image' => $name
             ]
             );
 

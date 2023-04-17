@@ -7,7 +7,11 @@
     <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
         <div class="flex flex-col items-center justify-center lg:flex-row">
             <div class="rounded-full border-8 border-primary shadow-xl">
-                <img src="{{Vite::asset('resources/assets/img/foto_Everton.jpeg')}}" class="h-48 rounded-full sm:h-56" alt="author" />
+                @if(isset($profile->image) && \Illuminate\Support\Facades\Storage::exists('public/'.$profile->image))
+                    <img class="h-48 rounded-full sm:h-56" alt="{{$profile->image}}" src="{{ asset('storage/'. $profile->image)}}">
+                @else
+                    <img src="{{Vite::asset('resources/assets/img/foto_Everton.jpeg')}}" class="h-48 rounded-full sm:h-56" alt="author" />
+                @endif
             </div>
             <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
                 <h1 class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">

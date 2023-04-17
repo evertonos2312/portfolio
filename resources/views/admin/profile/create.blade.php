@@ -9,6 +9,8 @@
 @section('content')
     <div class="bg-white p-6 rounded shadow mt-4">
         <div class="mt-4">
+                <button type="button" data-bs-toggle="modal"  data-bs-target="#exampleModal" class="inline-block rounded-full bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                >Adicionar linguagem de programação</button>
             <form method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data" class="mt-6 space-y-6">
                 @csrf
                 @if ($errors->any())
@@ -58,19 +60,19 @@
                         </textarea>
                     </label>
 
-{{--                    <label class="block">--}}
-{{--                        <span class="">Imagem</span>--}}
-{{--                        @if(isset($profile->image))--}}
-{{--                            <img class="w-20 h-20 rounded-full fill-current" alt="{{$profile->image}}" src="{{ asset('storage/'. $profile->image)}}">--}}
-{{--                        @endif--}}
-{{--                        <input  name="image" accept="image/*" type="file" class="block w-full text-sm text-slate-500--}}
-{{--                              file:mr-4 file:mt-2 file:py-2 file:px-4--}}
-{{--                              file:rounded-full file:border-0--}}
-{{--                              file:text-sm file:font-semibold--}}
-{{--                              file:bg-violet-50 file:text-violet-700--}}
-{{--                              hover:file:bg-violet-100--}}
-{{--                            "/>--}}
-{{--                    </label>--}}
+                    <label class="block">
+                        <span class="">Imagem</span>
+                        @if(isset($profile->image))
+                            <img class="w-20 h-20 rounded-full fill-current" alt="{{$profile->image}}" src="{{ asset('storage/'. $profile->image)}}">
+                        @endif
+                        <input  name="image" accept="image/*" type="file" class="block w-full text-sm text-slate-500
+                              file:mr-4 file:mt-2 file:py-2 file:px-4
+                              file:rounded-full file:border-0
+                              file:text-sm file:font-semibold
+                              file:bg-violet-50 file:text-violet-700
+                              hover:file:bg-violet-100
+                            "/>
+                    </label>
                     <div class="flex justify-center space-x-2">
                         <button
                             type="submit"
@@ -82,4 +84,11 @@
             </form>
         </div>
     </div>
+        <livewire:admin.language-show/>
+    <x-modal name="teste"/>
+    <script>
+        $('#exampleModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
 @endsection

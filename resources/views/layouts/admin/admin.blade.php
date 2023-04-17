@@ -14,21 +14,20 @@
     <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="{{ asset('js/jquery-3.5.0.min.js') }}"></script>
+    @livewireStyles
 </head>
-<body class="bg-gray-200 min-h-screen font-base">
-<div id="app">
+<body>
+<b class="screen-overlay"></b>
+<livewire:admin.sidebar />
+<main class="main-wrap">
     <livewire:admin.navbar />
-    @yield('header')
-    <main>
-        <div class="container mx-auto py-6 sm:px-6 lg:px-8">
-            <!-- Replace with your content -->
-            <div class="px-4 py-6 sm:px-0">
+    <section class="content-main">
+            @yield('content')
+    </section>
+</main>
+<script src="{{ asset('js/script.js') }}"></script>
+@livewireScripts
 
-                @yield('content')
-            </div>
-            <!-- /End replace -->
-        </div>
-    </main>
-</div>
 </body>
 </html>
