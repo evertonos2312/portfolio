@@ -6,7 +6,7 @@
             <div class="py-4 px-6">
                 <div class="text-center font-bold text-gray-700 text-3xl">Olá, Everton <span>&#128578;</span></div>
                 <div class="mt-1 text-center font-bold text-gray-600 text-xl">Bem vindo de volta!</div>
-                <form action="{{ route('login') }}" method="POST">
+                <form action="{{ route('auth') }}" method="POST">
                     @csrf
                     <div class="mt-4 w-full">
                         <input type="email" name="email" placeholder="E-mail"
