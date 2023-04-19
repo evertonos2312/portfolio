@@ -2,7 +2,7 @@
     <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
         <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
             <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-                Quem eu sou?
+                Quem sou eu?
             </h2>
             <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
                 Olá, meu nome é Everton e sou Programador PHP.

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\BadgeController;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'update'])->name('profile.update');
     Route::post('admin/language', [\App\Http\Controllers\Admin\LanguageController::class, 'store'])->name('language.create');
     Route::delete('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('projects', ProjectController::class);
 });
 
 

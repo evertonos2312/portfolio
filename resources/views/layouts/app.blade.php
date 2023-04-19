@@ -25,6 +25,8 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script src="{{ asset('js/jquery-3.5.0.min.js') }}"></script>
+        @livewireStyles
     </head>
     <body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
         <div id="main" class="relative">
@@ -72,5 +74,7 @@
                 </div>
             </div>
         </div>
+        <script src="{{ asset('js/script.js') }}"></script>
+        @livewireScripts
     </body>
 </html>
