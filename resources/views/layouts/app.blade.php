@@ -50,23 +50,20 @@
 
                     <livewire:work />
 
-                    <livewire:blog />
+{{--                    <livewire:blog />--}}
 
-                    <livewire:contact />
+{{--                    <livewire:contact />--}}
 
-                    <livewire:join />
+{{--                    <livewire:join />--}}
 
                 </div>
                 <div class="bg-primary">
                     <div class="container flex flex-col justify-between py-6 sm:flex-row">
-                        <p class="text-center font-body text-white md:text-left">
-                            © Copyright 2022. All right reserved, Everton Silva.
-                        </p>
                         <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-                            <a href="/" class="pl-4">
+                            <a target="_blank" href="https://www.linkedin.com/in/everton-osilva/" class="pl-4">
                                 <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
                             </a>
-                            <a href="/" class="pl-4">
+                            <a target="_blank" href="https://github.com/evertonos2312" class="pl-4">
                                 <i class="bx bxl-github text-2xl text-white hover:text-yellow"></i>
                             </a>
                         </div>

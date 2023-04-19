@@ -18,6 +18,11 @@
                     <span class="text">Projetos</span>
                 </a>
             </li>
+            <li class="menu-item">
+                <a class="menu-link" href="{{ route('experiences.index') }}"> <i class="icon material-icons md-home"></i>
+                    <span class="text">Experiências</span>
+                </a>
+            </li>
 
 
         </ul>
