@@ -21,12 +21,12 @@
 
                     <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
                 </li>
-                <li class="group pl-6">
-                <span @click="triggerNavItem('#blog')"
-                      class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>
+{{--                <li class="group pl-6">--}}
+{{--                <span @click="triggerNavItem('#blog')"--}}
+{{--                      class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>--}}
 
-                    <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
-                </li>
+{{--                    <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>--}}
+{{--                </li>--}}
 
                 <li class="group pl-6">
 
@@ -73,12 +73,12 @@
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Experiências</span>
 
             </li>
-            <li class="py-2">
+{{--            <li class="py-2">--}}
 
-              <span @click="triggerMobileNavItem('#blog')"
-                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>
+{{--              <span @click="triggerMobileNavItem('#blog')"--}}
+{{--                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>--}}
 
-            </li>
+{{--            </li>--}}
 
             <li class="py-2">
 

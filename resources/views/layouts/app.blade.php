@@ -52,7 +52,7 @@
 
 {{--                    <livewire:blog />--}}
 
-{{--                    <livewire:contact />--}}
+                    <livewire:contact />
 
 {{--                    <livewire:join />--}}
 
