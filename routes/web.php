@@ -22,15 +22,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/admin/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('dashboard');
-    Route::get('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'create'])->name('profile.create');
-    Route::post('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'update'])->name('profile.update');
-    Route::post('admin/language', [\App\Http\Controllers\Admin\LanguageController::class, 'store'])->name('language.create');
-    Route::delete('admin/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::resource('projects', ProjectController::class);
-    Route::resource('experiences', ExperienceController::class);
+
 });
 
 
