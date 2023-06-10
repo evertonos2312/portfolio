@@ -12,10 +12,16 @@ use Filament\Resources\Table;
 use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\SpatieTagsInput;
 
 class ProjectResource extends Resource
 {
     protected static ?string $model = Project::class;
+
+    protected static ?string $breadcrumb = 'Projetos';
+    protected static ?string $pluralModelLabel = 'Projetos';
+    protected static ?string $modelLabel = 'projeto';
+
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
@@ -27,21 +33,19 @@ class ProjectResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('image')
+                Forms\Components\TextInput::make('name')->label('Tìtulo')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('url')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('skills')
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('description')
-                    ->maxLength(255),
-                Forms\Components\DatePicker::make('finished_at')
+                SpatieTagsInput::make('skills')->label('Tecnologias utilizadas'),
+                Forms\Components\DatePicker::make('finished_at')->label('Terminado em')
                     ->required(),
+                Forms\Components\Textarea::make('description')->label('Descrição')
+                    ->maxLength(255),
+                Forms\Components\FileUpload::make('image')->label('Imagem')
+                    ->required()->image(),
             ]);
     }
 

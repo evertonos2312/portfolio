@@ -9,6 +9,19 @@ class Portfolio extends Component
 {
     public function render()
     {
-        return view('livewire.portfolio', ['projects' => Project::orderByDesc('finished_at')->get()]);
+        $projects = Project::orderByDesc('finished_at')->get();
+        if($projects){
+            foreach ($projects as $project){
+                $skills = [];
+                $tags = $project->tags()->get();
+                if($tags->isNotEmpty()){
+                    foreach ($tags as $tag){
+                        $skills[] = $tag->name;
+                    }
+                }
+                $project->skills = $skills;
+            }
+        }
+        return view('livewire.portfolio', ['projects' => $projects]);
     }
 }

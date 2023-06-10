@@ -44,7 +44,12 @@
                                                 </div>
                                                 <div class="lg:ml-5 col-sm-12 col-lg-4">
                                                     <h5>{{ $project->name }}</h5>
-                                                    <p> <span class="font-bold">Tecnologias:</span> {{ $project->skills }}</p>
+                                                    <p> <span class="font-bold">Tecnologias:</span><br>
+                                                        @forelse($project->skills as $skill)
+                                                            {{ $skill }}@if(!$loop->last), @else. @endif
+                                                        @empty
+                                                        @endforelse
+                                                    </p>
                                                     <p> <span class="font-bold">URL:</span> <a target="_blank" href="{{ $project->url }}">{{ $project->url }}</a></p>
                                                     <p>
                                                         {{ $project->description }}
