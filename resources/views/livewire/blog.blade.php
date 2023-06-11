@@ -17,9 +17,9 @@
             More</span>
                 </div>
                 <div class="bg-white py-6 px-5 xl:py-8">
-          <span class="block font-body text-lg font-semibold text-black">How to become a frontend
+          <span class="blog block font-body text-lg font-semibold text-black">How to become a frontend
             developer</span>
-                    <span class="block pt-2 font-body text-grey-20">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <span class="blog block pt-2 font-body text-grey-20">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 </div>
@@ -34,8 +34,8 @@
             More</span>
                 </div>
                 <div class="bg-white py-6 px-5 xl:py-8">
-                    <span class="block font-body text-lg font-semibold text-black">My personal productivity system</span>
-                    <span class="block pt-2 font-body text-grey-20">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <span class=" blog block font-body text-lg font-semibold text-black">My personal productivity system</span>
+                    <span class=" blog block pt-2 font-body text-grey-20">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 </div>
@@ -50,8 +50,8 @@
             More</span>
                 </div>
                 <div class="bg-white py-6 px-5 xl:py-8">
-                    <span class="block font-body text-lg font-semibold text-black">My year in review 2020</span>
-                    <span class="block pt-2 font-body text-grey-20">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <span class=" blog block font-body text-lg font-semibold text-black">My year in review 2020</span>
+                    <span class=" blog block pt-2 font-body text-grey-20">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 </div>

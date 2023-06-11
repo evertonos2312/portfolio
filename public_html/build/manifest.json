@@ -1,0 +1,195 @@
+{
+  "resources/assets/img/blog-author.jpg": {
+    "file": "assets/blog-author.7ff94098.jpg",
+    "src": "resources/assets/img/blog-author.jpg"
+  },
+  "resources/assets/img/experience-figure.png": {
+    "file": "assets/experience-figure.607906f9.png",
+    "src": "resources/assets/img/experience-figure.png"
+  },
+  "resources/assets/img/favicon.png": {
+    "file": "assets/favicon.b65aa1c9.png",
+    "src": "resources/assets/img/favicon.png"
+  },
+  "resources/assets/img/foto_Everton.jpeg": {
+    "file": "assets/foto_Everton.60365b82.jpeg",
+    "src": "resources/assets/img/foto_Everton.jpeg"
+  },
+  "resources/assets/img/icon-award.svg": {
+    "file": "assets/icon-award.e88daa9b.svg",
+    "src": "resources/assets/img/icon-award.svg"
+  },
+  "resources/assets/img/bg-hero.jpg": {
+    "file": "assets/bg-hero.e738cea3.jpg",
+    "src": "resources/assets/img/bg-hero.jpg"
+  },
+  "resources/assets/img/bg-cta.jpg": {
+    "file": "assets/bg-cta.2fd29d17.jpg",
+    "src": "resources/assets/img/bg-cta.jpg"
+  },
+  "resources/assets/img/icon-close.svg": {
+    "file": "assets/icon-close.da5d9b08.svg",
+    "src": "resources/assets/img/icon-close.svg"
+  },
+  "resources/assets/img/icon-content-black.svg": {
+    "file": "assets/icon-content-black.a7e8f8a3.svg",
+    "src": "resources/assets/img/icon-content-black.svg"
+  },
+  "resources/assets/img/icon-content-white.svg": {
+    "file": "assets/icon-content-white.06f748a1.svg",
+    "src": "resources/assets/img/icon-content-white.svg"
+  },
+  "resources/assets/img/icon-design-black.svg": {
+    "file": "assets/icon-design-black.4e7c8c46.svg",
+    "src": "resources/assets/img/icon-design-black.svg"
+  },
+  "resources/assets/img/icon-design-white.svg": {
+    "file": "assets/icon-design-white.59474b21.svg",
+    "src": "resources/assets/img/icon-design-white.svg"
+  },
+  "resources/assets/img/icon-development-black.svg": {
+    "file": "assets/icon-development-black.fa28fad9.svg",
+    "src": "resources/assets/img/icon-development-black.svg"
+  },
+  "resources/assets/img/icon-development-white.svg": {
+    "file": "assets/icon-development-white.312e10ed.svg",
+    "src": "resources/assets/img/icon-development-white.svg"
+  },
+  "resources/assets/img/icon-email-black.svg": {
+    "file": "assets/icon-email-black.da192a70.svg",
+    "src": "resources/assets/img/icon-email-black.svg"
+  },
+  "resources/assets/img/icon-email-white.svg": {
+    "file": "assets/icon-email-white.82d4de2f.svg",
+    "src": "resources/assets/img/icon-email-white.svg"
+  },
+  "resources/assets/img/icon-graphics-white.svg": {
+    "file": "assets/icon-graphics-white.a95a6582.svg",
+    "src": "resources/assets/img/icon-graphics-white.svg"
+  },
+  "resources/assets/img/icon-graphics-black.svg": {
+    "file": "assets/icon-graphics-black.21c146da.svg",
+    "src": "resources/assets/img/icon-graphics-black.svg"
+  },
+  "resources/assets/img/icon-happy.svg": {
+    "file": "assets/icon-happy.f0abeb26.svg",
+    "src": "resources/assets/img/icon-happy.svg"
+  },
+  "resources/assets/img/icon-mobile-black.svg": {
+    "file": "assets/icon-mobile-black.28e44d07.svg",
+    "src": "resources/assets/img/icon-mobile-black.svg"
+  },
+  "resources/assets/img/icon-mobile-white.svg": {
+    "file": "assets/icon-mobile-white.e9142c18.svg",
+    "src": "resources/assets/img/icon-mobile-white.svg"
+  },
+  "resources/assets/img/icon-project.svg": {
+    "file": "assets/icon-project.ab217b9a.svg",
+    "src": "resources/assets/img/icon-project.svg"
+  },
+  "resources/assets/img/icon-puzzle.svg": {
+    "file": "assets/icon-puzzle.e955e126.svg",
+    "src": "resources/assets/img/icon-puzzle.svg"
+  },
+  "resources/assets/img/icon-woo.png": {
+    "file": "assets/icon-woo.2298441a.png",
+    "src": "resources/assets/img/icon-woo.png"
+  },
+  "resources/assets/img/icon-wp.png": {
+    "file": "assets/icon-wp.41980e62.png",
+    "src": "resources/assets/img/icon-wp.png"
+  },
+  "resources/assets/img/logo-amazon.svg": {
+    "file": "assets/logo-amazon.7adf1d63.svg",
+    "src": "resources/assets/img/logo-amazon.svg"
+  },
+  "resources/assets/img/logo-apple.svg": {
+    "file": "assets/logo-apple.d969de0d.svg",
+    "src": "resources/assets/img/logo-apple.svg"
+  },
+  "resources/assets/img/logo-coca-cola.svg": {
+    "file": "assets/logo-coca-cola.bb874bfa.svg",
+    "src": "resources/assets/img/logo-coca-cola.svg"
+  },
+  "resources/assets/img/logo-fedex.svg": {
+    "file": "assets/logo-fedex.c83cc3f1.svg",
+    "src": "resources/assets/img/logo-fedex.svg"
+  },
+  "resources/assets/img/logo-microsoft.svg": {
+    "file": "assets/logo-microsoft.08de5ffa.svg",
+    "src": "resources/assets/img/logo-microsoft.svg"
+  },
+  "resources/assets/img/logo-netflix.svg": {
+    "file": "assets/logo-netflix.57cc9912.svg",
+    "src": "resources/assets/img/logo-netflix.svg"
+  },
+  "resources/assets/img/logo-spotify.svg": {
+    "file": "assets/logo-spotify.284f2a97.svg",
+    "src": "resources/assets/img/logo-spotify.svg"
+  },
+  "resources/assets/img/logo-stripe.svg": {
+    "file": "assets/logo-stripe.349b6f27.svg",
+    "src": "resources/assets/img/logo-stripe.svg"
+  },
+  "resources/assets/img/logo.svg": {
+    "file": "assets/logo.9f792c46.svg",
+    "src": "resources/assets/img/logo.svg"
+  },
+  "resources/assets/img/php-white.png": {
+    "file": "assets/php-white.51ac98e7.png",
+    "src": "resources/assets/img/php-white.png"
+  },
+  "resources/assets/img/map.png": {
+    "file": "assets/map.2318caba.png",
+    "src": "resources/assets/img/map.png"
+  },
+  "resources/assets/img/portfolio-apple.jpeg": {
+    "file": "assets/portfolio-apple.8addfd8b.jpeg",
+    "src": "resources/assets/img/portfolio-apple.jpeg"
+  },
+  "resources/assets/img/portfolio-fedex.jpeg": {
+    "file": "assets/portfolio-fedex.9177de23.jpeg",
+    "src": "resources/assets/img/portfolio-fedex.jpeg"
+  },
+  "resources/assets/img/portfolio-microsoft.jpeg": {
+    "file": "assets/portfolio-microsoft.e4d2aa23.jpeg",
+    "src": "resources/assets/img/portfolio-microsoft.jpeg"
+  },
+  "resources/assets/img/portfolio-stripe.jpeg": {
+    "file": "assets/portfolio-stripe.e7d46e20.jpeg",
+    "src": "resources/assets/img/portfolio-stripe.jpeg"
+  },
+  "resources/assets/img/post-02.png": {
+    "file": "assets/post-02.689dffe4.png",
+    "src": "resources/assets/img/post-02.png"
+  },
+  "resources/assets/img/post-01.png": {
+    "file": "assets/post-01.790cbb14.png",
+    "src": "resources/assets/img/post-01.png"
+  },
+  "resources/assets/img/social.jpg": {
+    "file": "assets/social.e0b2f542.jpg",
+    "src": "resources/assets/img/social.jpg"
+  },
+  "resources/assets/img/post-03.png": {
+    "file": "assets/post-03.fcf12866.png",
+    "src": "resources/assets/img/post-03.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app.d2147173.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app.1d0f6538.css"
+    ]
+  },
+  "resources/js/app.css": {
+    "file": "assets/app.1d0f6538.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app.0d7c8e40.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  }
+}

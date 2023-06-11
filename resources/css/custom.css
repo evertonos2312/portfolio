@@ -1,0 +1,38 @@
+.to-hero-custom-gradient-to {
+    --tw-custom-gradient-to: rgba(65, 47, 144, .93)!important;
+}
+
+.from-custom-hero-gradient-from {
+    --tw-custom-gradient-from: rgb(0 0 0 / 95%) !important;
+    --tw-custom-gradient-to: rgba(85, 64, 174, 0) !important;
+    --tw-custom-gradient-stops: var(--tw-custom-gradient-from), rgb(19 0 100 / 93%)!important;
+}
+
+.bg-custom-gradient-to-r {
+    background-image: linear-gradient(to right,var(--tw-custom-gradient-stops)) !important;
+}
+
+.text-primary {
+    --tw-text-opacity: 1 !important;
+    color: rgb(19 0 100 / var(--tw-text-opacity)) !important;
+}
+
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(19 0 100 / var(--tw-bg-opacity)) !important;
+}
+
+.border-primary {
+    --tw-border-opacity: 1;
+    border-color: rgb(19 0 100 / var(--tw-border-opacity)) !important;
+}
+
+.blog {
+    color: #0a0a18 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+
+a {
+    text-decoration: none !important;
+}

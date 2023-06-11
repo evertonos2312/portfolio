@@ -1,12 +1,14 @@
+import '../assets/js/main.js'
+import '../css/custom.css'
+
 import './bootstrap';
 
-// import '../assets';
-
-import '../assets/js/main.js'
-
-import.meta.glob([ '../assets/**', ]);
 
 import Alpine from 'alpinejs';
+
+
+
+import.meta.glob([ '../assets/**', ]);
 
 window.Alpine = Alpine;
 
