@@ -40,8 +40,7 @@ class ExperienceResource extends Resource
                 Forms\Components\DatePicker::make('finished_at')->label('Termino em')
                     ->nullable(),
                 Forms\Components\Checkbox::make('current')->label('Atual?')->requiredWithout('finished_at'),
-                Forms\Components\Textarea::make('description')->label('Descrição')
-                    ->maxLength(255),
+                Forms\Components\Textarea::make('description')->label('Descrição'),
                 Forms\Components\FileUpload::make('logo')->label('Imagem')
                     ->required()->image(),
             ]);

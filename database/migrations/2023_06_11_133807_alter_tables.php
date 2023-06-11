@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (Schema::hasColumn('projects', 'skills')) {
-            Schema::table('projects', function (Blueprint $table) {
-                $table->dropColumn('skills');
-            });
-        }
-
         Schema::table('projects', function (Blueprint $table) {
-            $table->json('skills')->nullable();
+            $table->text('description')->change();
+            $table->boolean('visible')->default(true);
+        });
+        Schema::table('experiences', function (Blueprint $table) {
+            $table->text('description')->change();
+            $table->boolean('visible')->default(true);
         });
     }
 

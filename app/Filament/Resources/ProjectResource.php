@@ -42,8 +42,7 @@ class ProjectResource extends Resource
                 SpatieTagsInput::make('skills')->label('Tecnologias utilizadas'),
                 Forms\Components\DatePicker::make('finished_at')->label('Terminado em')
                     ->required(),
-                Forms\Components\Textarea::make('description')->label('Descrição')
-                    ->maxLength(255),
+                Forms\Components\Textarea::make('description')->label('Descrição'),
                 Forms\Components\FileUpload::make('image')->label('Imagem')
                     ->required()->image(),
             ]);
