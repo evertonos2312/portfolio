@@ -54,10 +54,10 @@ class ProjectResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\ImageColumn::make('image')->circular()->height(100)->label('Imagem'),
-                Tables\Columns\TextColumn::make('name')->label('Nome'),
+                Tables\Columns\TextColumn::make('name')->label('Nome')->sortable(),
                 Tables\Columns\TextColumn::make('finished_at')
-                    ->date('d/m/Y')->label('Terminado em'),
-            ])
+                    ->date('d/m/Y')->label('Terminado em')->sortable(),
+            ])->defaultSort('finished_at', 'desc')
             ->filters([
                 //
             ])
