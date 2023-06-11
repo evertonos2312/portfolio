@@ -36,15 +36,19 @@ class ProjectResource extends Resource
                 Forms\Components\TextInput::make('name')->label('Tìtulo')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\Checkbox::make('visible')->label('Visível?')->default(true),
                 Forms\Components\TextInput::make('url')
                     ->required()
                     ->maxLength(255),
                 SpatieTagsInput::make('skills')->label('Tecnologias utilizadas'),
                 Forms\Components\DatePicker::make('finished_at')->label('Terminado em')
                     ->required(),
-                Forms\Components\Textarea::make('description')->label('Descrição'),
                 Forms\Components\FileUpload::make('image')->label('Imagem')
                     ->required()->image(),
+
+                Forms\Components\RichEditor::make('description')->label('Descrição') ->disableToolbarButtons([
+                    'attachFiles',
+                ])->columnSpanFull(),
             ]);
     }
 
@@ -56,6 +60,7 @@ class ProjectResource extends Resource
                 Tables\Columns\TextColumn::make('name')->label('Nome')->sortable(),
                 Tables\Columns\TextColumn::make('finished_at')
                     ->date('d/m/Y')->label('Terminado em')->sortable(),
+                Tables\Columns\CheckboxColumn::make('visible')->label('Visível?'),
             ])->defaultSort('finished_at', 'desc')
             ->filters([
                 //

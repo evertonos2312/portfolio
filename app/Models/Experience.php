@@ -15,6 +15,7 @@ class Experience extends Model
         'description',
         'start_at',
         'finished_at',
-        'current'
+        'current',
+        'visible'
     ];
 }

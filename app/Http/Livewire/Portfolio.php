@@ -9,7 +9,7 @@ class Portfolio extends Component
 {
     public function render()
     {
-        $projects = Project::orderByDesc('finished_at')->get();
+        $projects = Project::orderByDesc('finished_at')->where('visible', true)->get();
         if($projects){
             foreach ($projects as $project){
                 $skills = [];

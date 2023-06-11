@@ -40,6 +40,7 @@ class ExperienceResource extends Resource
                 Forms\Components\DatePicker::make('finished_at')->label('Termino em')
                     ->nullable(),
                 Forms\Components\Checkbox::make('current')->label('Atual?')->requiredWithout('finished_at'),
+                Forms\Components\Checkbox::make('visible')->label('Visível?')->default(true),
                 Forms\Components\Textarea::make('description')->label('Descrição'),
                 Forms\Components\FileUpload::make('logo')->label('Imagem')
                     ->required()->image(),
@@ -57,6 +58,7 @@ class ExperienceResource extends Resource
                 Tables\Columns\TextColumn::make('finished_at')
                     ->date('d/m/Y')->label('Fim')->sortable(),
                 Tables\Columns\CheckboxColumn::make('current')->label('Atual?')->disabled(),
+                Tables\Columns\CheckboxColumn::make('visible')->label('Visível?'),
             ])->defaultSort('start_at', 'desc')
             ->filters([
                 //

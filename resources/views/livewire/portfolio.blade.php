@@ -52,7 +52,7 @@
                                                     </p>
                                                     <p> <span class="font-bold">URL:</span> <a target="_blank" href="{{ $project->url }}">{{ $project->url }}</a></p>
                                                     <p>
-                                                        {{ $project->description }}
+                                                        {!! $project->description  !!}
                                                     </p>
                                                 </div>
                                             </div>

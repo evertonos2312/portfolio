@@ -9,6 +9,6 @@ class Work extends Component
 {
     public function render()
     {
-        return view('livewire.work', ['experiencies' => Experience::orderByDesc('start_at')->get()]);
+        return view('livewire.work', ['experiencies' => Experience::orderByDesc('start_at')->where('visible', true)->get()]);
     }
 }

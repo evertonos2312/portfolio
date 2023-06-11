@@ -18,6 +18,6 @@ class Project extends Model
         'finished_at',
         'description',
         'image',
-        'active'
+        'visible'
     ];
 }
