@@ -11,7 +11,7 @@ https://www.createit.com/blog/make-docker-on-windows-fast-again-2022/
 
 Clone Repositório
 ```sh
-git clone https://gitlab.contmatic.com.br/marketing/base-laravel.git meu-projeto
+git clone https://github.com/evertonos2312/portfolio.git
 ```
 
 ```sh
