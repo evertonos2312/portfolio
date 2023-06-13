@@ -23,7 +23,7 @@ class ProjectResource extends Resource
     protected static ?string $modelLabel = 'projeto';
 
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
     protected static ?string $navigationLabel = 'Projetos';
 
